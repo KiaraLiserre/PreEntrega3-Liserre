@@ -1,0 +1,163 @@
+body {
+	background-color: white;
+	width: 100vw;
+    overflow-x: hidden;
+    color: #953F73;
+	font-family: "Open Sans", sans-serif;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    border-bottom: 1px solid #953F73;
+    display: inline-block;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+h2, h3 {
+	font-size: 1.5rem;
+	font-weight: 700;
+	padding-bottom: 4px;
+}
+
+a{
+	color: #953F73;
+	text-decoration: none;
+}
+
+.pages{
+	font-size: 1rem;
+}
+
+h4{
+	font-size: 12px;
+	text-decoration: n;
+}
+
+.stage{
+	font-weight: bolder;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin-left: 25%;
+	margin-right:25%;
+	border: 1px solid #953F73;
+}
+
+p {
+	font-size: 10px;
+	font-weight: 200;
+}
+
+.banner {
+	background-image: url(../resources/img/banner.jpg);
+    background-position: 25% 15%;
+    height: 300px;
+    width: 100%;
+    margin-top: 7px;
+    border-top: 1px solid #953F73;
+    border-bottom: 1px solid #953F73;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.banner > div {
+	border-top: 4px solid white;
+	border-bottom: 4px solid white;
+	padding-top: 5.3rem;
+	padding-bottom: 5.3rem;
+}
+
+.h2-subtitle{
+	text-align: center;
+    border-bottom: 1px solid #953F73;
+    display: inline;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.h3-subtitle{
+	text-align: center;
+    border-bottom: 1px solid #953F73;
+}
+
+.text-center{
+	margin-top: 0;
+}
+
+.col-sm-2.text-center > h3{
+	text-align: left;
+	padding-left: 20px;
+}
+
+.col-sm-2.text-center > p{
+	text-align: left;
+	padding-left: 20px;
+}
+
+.rounded-icon{
+	width: 70%;
+}
+
+main {
+	padding: 4%;
+	padding-top: 50px;
+	border-top: 1px solid #953F73;
+	margin-top: 5px;
+}
+
+.ordering{
+	margin-top:2%;
+}
+
+button{
+	border: 1px solid #953F73;
+	background-color: transparent;
+	color: #953F73;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	padding: 2px;
+	width: 35%;
+}
+
+.vr{
+	padding-bottom: 15%;
+	width: 1px;
+	margin-left: 50%;
+	background-color: #953F73;
+	opacity: 1;
+}
+
+/*================================ RESPONSIVE PROPERTIES ==========================================*/
+@media(max-width: 500px) {
+	
+	.rounded-icon{
+		width: 40%;
+	}
+
+	.link-container {
+		flex-direction: column;
+		justify-content: left;
+		text-align: left;
+	  }
+
+	.desc-container{
+		flex-direction: column;
+	  }
+
+	.rounded-icon{
+		width:20%
+	}
+
+	.vr{
+		padding-bottom: 22%;
+	}
+
+	.vr.vr-mid{
+		padding-bottom: 30%;
+	}
+
+	.vr.vr-last{
+		padding-bottom: 30%;
+	}
+}
