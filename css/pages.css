@@ -11,6 +11,11 @@ p{
 	font-weight: 200;
 }
 
+a{
+	color: #953F73;
+	text-decoration: none;
+}
+
 .underscored {
     font-size: 1.2rem;
     border-bottom: 1px solid #953F73;
