@@ -1,25 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Bunila</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/index.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-  <!--<script src="js/bootstrap.bundle.min.js"></script>-->
-  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Free Web tutorials">
   <meta name="keywords" content="Pixel-Art, Character-Design, Emotes">
   <meta name="Chiara Liserre" content="Business page">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
   <link rel="icon" type="image/x-icon" href="resources/img/ositos.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
+
 <body>
 
-
   <header>
-    <div class= "d-flex justify-content-center flex-column text-center banner" title="Banner">
+    <nav class="site-header sticky-top py-1">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-2" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="d-block mx-auto">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
+            <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
+            <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
+            <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
+            <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
+            <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+          </svg>
+        </a>
+        <a class="py-2 d-none d-md-inline-block" href="pages/artstyles.html">Art Styles</a>
+        <a class="py-2 d-none d-md-inline-block" href="pages/socials.html">Socials</a>
+        <!--More redirects only to FAQ page for now. Dropdown for options Rules and Payment Info remains to be developed-->
+        <a class="py-2 d-none d-md-inline-block" href="pages/faq.html">More</a>
+      </div>
+    </nav>
+
+    <div class="d-flex justify-content-center flex-column text-center banner" title="Banner">
       <div>
         <div class="container-fluid p-3 text-center">
           <h1>Bunila</h1>
@@ -27,82 +49,109 @@
         </div>
       </div>
     </div>
+  </header>
+
+  <main>
+
     <div class="container mt-3">
       <div class="row justify-content-center">
         <h2 class="h2-subtitle">Artwork Styles and Rules</h2>
         <div class="d-flex justify-content-center flex-column text-center">
-        <p>Please note that each order can take more or less time<br>depening on what you ordered.</p>
+          <p>Please note that each order can take more or less time<br>depening on what you ordered.</p>
         </div>
 
-        <a class="col-sm-3 text-center" href="pages/second-page.html">
-        <div class="link-container">
-          <div class="desc-container">
-          <img class= "rounded-icon" src="resources/img/ositos.png" alt="Missing osito.png">
-          <h3 class="pages">Rules</h3>
-          <p>Here you'll be able to know all of my rules, do's and don'ts as well as my payment information.</p>
-        </div>
-        </div>
+        <a class="col-sm-3 text-center" href="pages/fyi.html#rules">
+          <div class="link-container">
+            <div class="desc-container">
+              <img class="rounded-icon" src="resources/img/ositos.png" alt="Missing osito.png">
+              <h3 class="pages">Rules</h3>
+              <p>Here you'll be able to know all of my rules, do's and don'ts as well as my payment information.</p>
+            </div>
+          </div>
         </a>
 
-        <a class="col-sm-3 text-center" href="pages/third-page.html">
-        <div class="link-container">
-          <img class= "rounded-icon" src="resources/img/ositos.png" alt="Missing osito.png">
-          <h3 class="pages">Pixel Art</h3>
-          <p>Pixel art style usually takes more time. You may ask for animations if wanted but please ask first as I only do a selected type of animations</p>
-        </div>
-      </a>
+        <a class="col-sm-3 text-center" href="pages/artstyles.html#pixel-art">
+          <div class="link-container">
+            <img class="rounded-icon" src="resources/img/ositos.png" alt="Missing osito.png">
+            <h3 class="pages">Pixel Art</h3>
+            <p>Pixel art style usually takes more time. You may ask for animations if wanted but please ask first as I
+              only do a selected type of animations</p>
+          </div>
+        </a>
 
-      <a class="col-sm-3 text-center" href="pages/forth-page.html">
-        <div class="link-container">
-          <img class= "rounded-icon" src="resources/img/ositos.png" alt="Missing osito.png">
-          <h3 class="pages">Character Design</h3>        
-          <p>Character design refers to game characters, vtuber concept art, etc. No animations.</p>
-        </div>
-      </a>
+        <a class="col-sm-3 text-center" href="pages/artstyles.html#char-design">
+          <div class="link-container">
+            <img class="rounded-icon" src="resources/img/ositos.png" alt="Missing osito.png">
+            <h3 class="pages">Character Design</h3>
+            <p>Character design refers to game characters, vtuber concept art, etc. No animations.</p>
+          </div>
+        </a>
 
-        <a class="col-sm-3 text-center" href="pages/fifth-page.html">
-        <div class="link-container">
-          <img title="osito-emotes" class= "rounded-icon" src="resources/img/ositos.png" alt="Missing osito.png">
-          <h3 class="pages">Emotes</h3>        
-          <p>Emotes refer to Discord and Twitch emotes. No animations at the moment.</p>
-        </div>
-      </a>
-    </div>
-
+        <a class="col-sm-3 text-center" href="pages/artstyles.html#emotes">
+          <div class="link-container">
+            <img title="osito-emotes" class="rounded-icon" src="resources/img/ositos.png" alt="Missing osito.png">
+            <h3 class="pages">Emotes</h3>
+            <p>Emotes refer to Discord and Twitch emotes. No animations at the moment.</p>
+          </div>
+        </a>
       </div>
     </div>
-  </header>
 
-
-  <main>
     <div class="row g-5">
       <div class="col-md-6 text-center ordering">
         <h3 class="h3-subtitle">Order delivering process</h3>
-        <p>Depending on the style and what you asked for I may take between a week or two.<br>I'll update you all the time and let you know if there's any inconvenience.</p>
+        <p>Depending on the style and what you asked for I may take between a week or two.<br>I'll update you all the
+          time and let you know if there's any inconvenience.</p>
         <button type="button">> Order here! <</button>
       </div>
 
       <div class="col-md-6">
         <div class="row">
           <div class="row">
-            <div class="col"><h4 class="stage text-center">START-UP</h4><div class="vr"></div></div>
-            <div class="col"><h4>REFERENCES AND PRINCING</h4><p>Starting from here i'll ask you to send all possible references so we can see what i'm able to do and the cost of it.</p></div>
+            <div class="col">
+              <h4 class="stage text-center">START-UP</h4>
+              <div class="vr"></div>
+            </div>
+            <div class="col">
+              <h4>REFERENCES AND PRINCING</h4>
+              <p>Starting from here i'll ask you to send all possible references so we can see what i'm able to do and
+                the cost of it.</p>
+            </div>
           </div>
           <div class="row">
-            <div class="col"><h4 class="stage text-center">PHASE 2</h4><div class="vr vr-mid"></div></div>
-            <div class="col"><h4>SKETCHING</h4><p>In this phase you'll be allowed to ask for as many changes as you wish. Once you finally confirm the sketch there will be no more changes aside from colors.</p></div>
+            <div class="col">
+              <h4 class="stage text-center">PHASE 2</h4>
+              <div class="vr vr-mid"></div>
+            </div>
+            <div class="col">
+              <h4>SKETCHING</h4>
+              <p>In this phase you'll be allowed to ask for as many changes as you wish. Once you finally confirm the
+                sketch there will be no more changes aside from colors.</p>
+            </div>
           </div>
           <div class="row">
-            <div class="col"><h4 class="stage text-center">PHASE 3</h4><div class="vr vr-last"></div></div>
-            <div class="col"><h4>LINEART AND COLORING</h4><p>In this phase i'll be sending you various wips and chaning the colors or tones as you wish. Here is where you'll also check on the animations you wanted.</p></div>
+            <div class="col">
+              <h4 class="stage text-center">PHASE 3</h4>
+              <div class="vr vr-last"></div>
+            </div>
+            <div class="col">
+              <h4>LINEART AND COLORING</h4>
+              <p>In this phase i'll be sending you various wips and chaning the colors or tones as you wish. Here is
+                where you'll also check on the animations you wanted.</p>
+            </div>
           </div>
           <div class="row">
-            <div class="col"><h4 class="stage text-center">FINISHED</h4></div>
-            <div class="col"><h4>FINAL ADJUSTMENTS AND FILES</h4></div>
+            <div class="col">
+              <h4 class="stage text-center">FINISHED</h4>
+            </div>
+            <div class="col">
+              <h4>FINAL ADJUSTMENTS AND FILES</h4>
+            </div>
           </div>
+        </div>
       </div>
-      </div> 
-    </div>  
+    </div>
   </main>
 </body>
+
 </html>
