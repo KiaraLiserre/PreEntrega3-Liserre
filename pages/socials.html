@@ -16,66 +16,59 @@
 </head>
 <body>
 
-
   <header>
-
-    <nav class="sticky-top py-1 bg-light">
-		<div class="container d-flex flex-column flex-md-row justify-content-center">
-		  <a class="p-2 d-none d-md-inline-block" href="artstyles.html">Art Styles</a>
-		  <a class="p-2 d-none d-md-inline-block" href="socials.html">Socials</a>
+    <nav class="sticky-top py-1 bg-light navbar">
+		<div class="container d-flex flex-column flex-md-row justify-content-center navbar__container">
+		  <a class="p-2 d-none d-md-inline-block navbar__container-item" href="pages/artstyles.html">Art Styles</a>
+		  <a class="p-2 d-none d-md-inline-block navbar__container-item" href="pages/socials.html">Socials</a>
 		  <!--More redirects only to FAQ page for now. Dropdown for options Rules and Payment Info remains to be developed-->
-		  <a class="p-2 d-none d-md-inline-block" href="faq.html">More</a>
+		  <a class="p-2 d-none d-md-inline-block navbar__container-item" href="pages/faq.html">More</a>
 		</div>
 	  </nav>
 
-    <div class= "d-flex justify-content-center flex-column text-center banner">
-      <div>
-        <div class="container-fluid p-3 text-center">
-          <h1>Bunila</h1>
-          <p>Digital Art Portfolio</p>
-        </div>
-      </div>
-    </div>
+	  <div class="d-flex justify-content-center flex-column text-center banner" title="Banner">
+		<div class="banner__frame">
+		  <div class="container-fluid p-3 text-center banner__main">
+			<h1 class="banner__main-title">Bunila</h1>
+			<p>Digital Art Portfolio</p>
+		  </div>
+		</div>
+	  </div>
   </header>
 
   <main>
 
-	<input class = "back-button" type="button" onclick="location.href='../index.html';" value="Back">
+	<input class="back-button" type="button" onclick="location.href='../index.html';" value="Back">
 
-	<div class="row justify-content-center pt-3">
-        <div class="d-flex justify-content-center flex-column text-center">
-        </div>
-
-        <a class="col-sm-3 text-center" href="pages/fyi.html#rules">
-          <div class="link-container">
-            <div class="desc-container">
-              <img class="rounded-icon" src="../resources/img/ositos.png" alt="Missing osito.png">
-              <h3 class="pages">Rules</h3>
-            </div>
+	<div class="row justify-content-center pt-3 wrapper">
+        <a class="col-sm-3 text-center wrapper__link" href="pages/fyi.html#rules">
+          <div class="link-container link__frame">
+            <img class="rounded-icon link-img" src="../resources/img/ositos.png" alt="Missing osito.png">
+            <h3>Rules</h3>
           </div>
         </a>
 
-        <a class="col-sm-3 text-center" href="pages/artstyles.html#pixel-art">
-          <div class="link-container">
-            <img class="rounded-icon" src="../resources/img/ositos.png" alt="Missing osito.png">
-            <h3 class="pages">Pixel Art</h3>
+        <a class="col-sm-3 text-center wrapper__link" href="pages/artstyles.html#pixel-art">
+          <div class="link-container link__frame">
+            <img class="rounded-icon link-img" src="../resources/img/ositos.png" alt="Missing osito.png">
+            <h3>Pixel Art</h3>
           </div>
         </a>
 
-        <a class="col-sm-3 text-center" href="pages/artstyles.html#char-design">
-          <div class="link-container">
-            <img class="rounded-icon" src="../resources/img/ositos.png" alt="Missing osito.png">
-            <h3 class="pages">Character Design</h3>
+        <a class="col-sm-3 text-center wrapper__link" href="pages/artstyles.html#char-design">
+          <div class="link-container link__frame">
+            <img class="rounded-icon link-img" src="../resources/img/ositos.png" alt="Missing osito.png">
+            <h3>Character Design</h3>
           </div>
         </a>
 
-        <a class="col-sm-3 text-center" href="pages/artstyles.html#emotes">
-          <div class="link-container">
-            <img title="osito-emotes" class="rounded-icon" src="../resources/img/ositos.png" alt="Missing osito.png">
-            <h3 class="pages">Emotes</h3>
+        <a class="col-sm-3 text-center wrapper__link" href="pages/artstyles.html#emotes">
+          <div class="link-container link__frame">
+            <img title="osito-emotes link-img" class="rounded-icon" src="../resources/img/ositos.png" alt="Missing osito.png">
+            <h3>Emotes</h3>
           </div>
         </a>
-      </div>
+    </div>
 
   </main>
 </body>

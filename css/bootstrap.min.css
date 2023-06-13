@@ -8065,7 +8065,6 @@ fieldset:disabled .btn {
 }
 
 .sticky-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020
@@ -8886,33 +8885,7 @@ fieldset:disabled .btn {
     order: -1 !important
 }
 
-.order-0 {
-    order: 0 !important
-}
 
-.order-1 {
-    order: 1 !important
-}
-
-.order-2 {
-    order: 2 !important
-}
-
-.order-3 {
-    order: 3 !important
-}
-
-.order-4 {
-    order: 4 !important
-}
-
-.order-5 {
-    order: 5 !important
-}
-
-.order-last {
-    order: 6 !important
-}
 
 .m-0 {
     margin: 0 !important
