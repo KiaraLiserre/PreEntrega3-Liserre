@@ -174,8 +174,8 @@ main {
 	justify-content: center !important;
 }
 
-.pages__container >* {
-    flex-shrink: 0;
+.pages__container > * {
+    flex-shrink: 50;
     width: 100%;
     max-width: 100%;
     padding-right: calc(var(--bs-gutter-x) * .5);
@@ -204,12 +204,11 @@ main {
 	text-align: center !important;
 }
 
-.pages__link{
-	
-}
-
-.pages__link-h3{
-	
+.separator{
+	margin-right: -20%;
+	position:absolute;
+	border-bottom: 1px solid #953F73;
+	width: 100%;
 }
 
 .order{
@@ -235,6 +234,7 @@ main {
 }
 
 .phases{
+	padding-top: 4rem;
 	flex: 0 0 auto;
     width: 50%;
 }
@@ -270,20 +270,25 @@ main {
 	flex-shrink: 0;
     width: 100%;
     max-width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * .5);
-    padding-left: calc(var(--bs-gutter-x) * .5);
+    padding-right: calc(var(--bs-gutter-x) * 2);
+    padding-left: calc(var(--bs-gutter-x) * 2);
     margin-top: var(--bs-gutter-y)
 }
 
-.phases__name{
+.phases__phase{
 	font-weight: bolder;
 	padding-top: 3px;
 	padding-bottom: 3px;
-	margin-left: 5%;
-	margin-right:25%;
+	margin-left: 0;
+	margin-right: 0;
 	border: 1px solid #953F73;
 	text-align: center !important;
 }
+
+.phases__name{
+	border: none;
+}
+
 
 .phases__vline{
 	display: inline-block;
@@ -299,8 +304,56 @@ main {
 	opacity: 1;
 }
 
+.line__mid{
+	padding-bottom: 22%;
+}
+
+.line__last{
+	padding-bottom: 22%;
+}
+
 /*----------RESPONSIVE----------*/
 
+@media(max-width: 600px){
+	
+	h3{
+		font-size: .75rem;
+	}
+	
+	.pages__container{
+		flex-direction: row;
+	  }
+	  
+	      .navbar__container,
+	.pages{
+        max-width: 540px
+    }
+	
+	 .pages__link-img {
+		width: 70%;
+	  }
+	  
+	.navbar__container,
+	.pages{
+        max-width: 720px
+    }
+	.navbar__container-item{
+		display: inline-block !important
+	}
+	
+	.pages__link-img{
+		width: 100%;
+	}
+
+	.pages__link {
+		flex-direction: row;
+		justify-content: left;
+		text-align: left;
+	  }
+	  
+}
+
+/*
 @media (min-width:100px){
 	
 	.pages__link-img {
@@ -330,43 +383,7 @@ main {
 
 @media (min-width:768px) {
 
-    .navbar__container,
-	.pages{
-        max-width: 720px
-    }
-	.navbar__container-item{
-		display: inline-block !important
-	}
-	
-	.pages__link-img{
-		width: 100%;
-	}
-
-	.pages__link {
-		flex-direction: column;
-		justify-content: left;
-		text-align: left;
-	  }
-	  
-	 .pages__link-img {
-		width: 40%;
-	  }
-/*
-	.desc-container{
-		flex-direction: column;
-	  }
-*/
-	.phases__vline{
-		
-	}
-
-	.vr.vr-mid{
-		padding-bottom: 30%;
-	}
-
-	.vr.vr-last{
-		padding-bottom: 30%;
-	}
+    
 	
 }
 
@@ -402,3 +419,4 @@ main {
         max-width: 1320px
     }
 }
+*/
