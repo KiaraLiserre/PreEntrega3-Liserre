@@ -8,7 +8,6 @@
   <meta name="keywords" content="Pixel-Art, Character-Design, Emotes">
   <meta name="Chiara Liserre" content="Business page">
   <link rel="icon" type="image/x-icon" href="resources/img/ositos.png">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,18 +17,18 @@
 <body>
 
   <header>
-    <nav class="sticky-top py-1 bg-light navbar">
-      <div class="container d-flex flex-column flex-md-row justify-content-center navbar__container">
-        <a class="p-2 d-none d-md-inline-block navbar__container-item" href="pages/artstyles.html">Art Styles</a>
-        <a class="p-2 d-none d-md-inline-block navbar__container-item" href="pages/socials.html">Socials</a>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a class="navbar__container-item" href="pages/artstyles.html">Art Styles</a>
+        <a class="navbar__container-item" href="pages/socials.html">Socials</a>
         <!--More redirects only to FAQ page for now. Dropdown for options Rules and Payment Info remains to be developed-->
-        <a class="p-2 d-none d-md-inline-block navbar__container-item" href="pages/faq.html">More</a>
+        <a class="navbar__container-item" href="pages/faq.html">More</a>
       </div>
     </nav>
 
-    <div class="d-flex justify-content-center flex-column text-center banner" title="Banner">
+    <div class="banner" title="Banner">
       <div class="banner__frame">
-        <div class="container-fluid p-3 text-center banner__title">
+        <div class="banner__title">
           <h1>Bunila</h1>
           <p>Digital Art Portfolio</p>
         </div>
@@ -38,96 +37,97 @@
   </header>
 
   <main>
-    <div class="container mb-4 pb-4 pages">
-      <div class="row justify-content-center pages__container">
-        <h2 class="h2-subtitle pages__title">Artwork Styles and Rules</h2>
-        <div class="d-flex justify-content-center flex-column text-center pages__title-subtitle">
+    <div class="pages">
+      <div class="pages__container">
+        <h2 class="pages__title">Artwork Styles and Rules</h2>
+        <div class="pages__title-subtitle">
           <p>Please note that each order can take more or less time<br>depening on what you ordered.</p>
         </div>
 
-        <a class="col-sm-3 text-center pages__container-item" href="pages/fyi.html#rules">
-          <div class="link-container pages__link">
-            <img class="rounded-icon pages__link-img" src="resources/img/ositos.png" alt="Missing osito.png">
-            <h3 class="pages pages__link-h3">Rules</h3>
-            <p>Here you'll be able to know all of my rules,<br>do's and don'ts as well as my payment information.</p>
+        <a class="pages__container-item" href="pages/fyi.html#rules">
+          <div class="pages__link">
+            <img class="pages__link-img" src="resources/img/ositos.png" alt="Missing osito.png">
+            <h3 class="pages__link-h3">Rules</h3>
+            <p>Here you'll be able to know all of terms of service for being eligible to order.</p>
           </div>
         </a>
 
-        <a class="col-sm-3 text-center pages__container-item" href="pages/artstyles.html#pixel-art">
+        <a class="pages__container-item" href="pages/fyi.html#payment-info">
           <div class="link-container pages__link">
             <img class="rounded-icon pages__link-img" src="resources/img/ositos.png" alt="Missing osito.png">
-            <h3 class="pages pages__link-h3">Pixel Art</h3>
-            <p>Pixel art style usually takes more time. You may ask for<br>animations if wanted but please ask first as I
-              only do a selected type of animations.</p>
+            <h3 class="pages pages__link-h3">Payment Info</h3>
+            <p>Here you’ll be able to know all about my payment information and purchising process. </p>
           </div>
         </a>
 
-        <a class="col-sm-3 text-center pages__container-item" href="pages/artstyles.html#char-design">
+        <a class="col-sm-3 text-center pages__container-item" href="#">
+		<!--This link is not yet developed-->
           <div class="link-container pages__link">
             <img class="rounded-icon pages__link-img" src="resources/img/ositos.png" alt="Missing osito.png">
-            <h3 class="pages pages__link-h3">Character Design</h3>
-            <p>Character design refers to game characters,<br>vtuber concept art, etc. No animations.</p>
+            <h3 class="pages pages__link-h3">Order List</h3>
+            <p>Here you’ll be able to see your position in my ordering list. You may ask to be anonymous.</p>
           </div>
         </a>
 
-        <a class="col-sm-3 text-center pages__container-item" href="pages/artstyles.html#emotes">
+        <a class="col-sm-3 text-center pages__container-item" href="#">
+		<!--This link is not yet developed-->
           <div class="link-container pages__link">
             <img class="rounded-icon pages__link-img" src="resources/img/ositos.png" alt="Missing osito.png">
-            <h3 class="pages pages__link-h3">Emotes</h3>
-            <p>Emotes refer to Discord and Twitch emotes.<br>No animations at the moment.</p>
+            <h3 class="pages pages__link-h3">Inquiries</h3>
+            <p>For any suggestions or questions you may have please don’t hesitate to contact me!</p>
           </div>
         </a>
       </div>
     </div>
 
-    <div class="row g-5 order">
-      <div class="col-md-6 text-center ordering-tmp order__container">
-        <h3 class="h3-subtitle order__container-h3">Order delivering process</h3>
+    <div class="order">
+      <div class="order__container">
+        <h3 class="order__container-h3">Order delivering process</h3>
         <p>Depending on the style and what you ask, it may take between a week or two.<br>I'll update you all the
           time and let you know if there's any inconvenience.</p>
         <button type="button">> Order here! <</button>
       </div>
 
-      <div class="col-md-6 phases">
-        <div class="row phases__container">
-          <div class="row phases__container-item">
-            <div class="col phases__col">
-              <h4 class="stage text-center phases__name">START-UP</h4>
-              <div class="vr phases__vline"></div>
+      <div class="phases">
+        <div class="phases__container">
+          <div class="phases__container-item">
+            <div class="phases__col">
+              <h4 class="phases__name">START-UP</h4>
+              <div class="phases__vline"></div>
             </div>
-            <div class="col phases__col">
+            <div class="phases__col">
               <h4 class="phases__name">REFERENCES AND PRINCING</h4>
               <p>Starting from here i'll ask you to send all possible references so we can see what i'm able to do and
                 the cost of it.</p>
             </div>
           </div>
-          <div class="row phases__container-item">
-            <div class="col phases__col">
-              <h4 class="stage text-center phases__name">PHASE 2</h4>
-              <div class="vr vr-mid phases__vline line__mid"></div>
+          <div class="phases__container-item">
+            <div class="phases__col">
+              <h4 class="phases__name">PHASE 2</h4>
+              <div class="phases__vline line__mid"></div>
             </div>
-            <div class="col phases__col">
+            <div class="phases__col">
               <h4 class="phases__name">SKETCHING</h4>
               <p>In this phase you'll be allowed to ask for as many changes as you wish. Once you finally confirm the
                 sketch there will be no more changes aside from colors.</p>
             </div>
           </div>
-          <div class="row phases__container-item">
-            <div class="col phases__col">
-              <h4 class="stage text-center phases__name">PHASE 3</h4>
-              <div class="vr vr-last phases__vline line__last"></div>
+          <div class="phases__container-item">
+            <div class="phases__col">
+              <h4 class="phases__name">PHASE 3</h4>
+              <div class="phases__vline line__last"></div>
             </div>
-            <div class="col phases__col">
+            <div class="phases__col">
               <h4 class="phases__name">LINEART AND COLORING</h4>
               <p>In this phase i'll be sending you various wips and chaning the colors or tones as you wish. Here is
                 where you'll also check on the animations you wanted.</p>
             </div>
           </div>
-          <div class="row phases__container-item">
-            <div class="col phases__col">
-              <h4 class="stage text-center phases__name">FINISHED</h4>
+          <div class="phases__container-item">
+            <div class="phases__col">
+              <h4 class="phases__name">FINISHED</h4>
             </div>
-            <div class="col phases__col">
+            <div class="phases__col">
               <h4 class="phases__name">FINAL ADJUSTMENTS AND FILES</h4>
             </div>
           </div>

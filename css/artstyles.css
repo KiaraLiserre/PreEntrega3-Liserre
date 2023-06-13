@@ -136,8 +136,8 @@ main {
 .banner__frame{
 	border-top: 4px solid white;
 	border-bottom: 4px solid white;
-	padding-top: 5.3rem;
-	padding-bottom: 5.3rem;
+	padding-top: 6.3rem;
+	padding-bottom: 6.3rem;
 }
 
 .banner__title{
@@ -152,151 +152,43 @@ main {
 	padding: 1rem !important;
 }
 
-.pages{
-	--bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * .5);
-    padding-left: calc(var(--bs-gutter-x) * .5);
-    margin-right: auto;
-    margin-left: auto;
-	margin-bottom: 1.5rem !important;
-}
-
-.pages__container{
-	--bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(-1 * var(--bs-gutter-y));
-    margin-right: calc(-.5 * var(--bs-gutter-x));
-    margin-left: calc(-.5 * var(--bs-gutter-x));
-	justify-content: center !important;
-}
-
-.pages__container >* {
-    flex-shrink: 0;
-    width: 100%;
-    max-width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * .5);
-    padding-left: calc(var(--bs-gutter-x) * .5);
-    margin-top: var(--bs-gutter-y);
-}
-
-.pages__title{
-	text-align: center;
-    border-bottom: 1px solid #953F73;
-    display: inline;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.pages__title-subtitle{
+.section{
 	display: flex !important;
-	justify-content: center !important;
-	flex-direction: column !important;
-	text-align: center !important;
+	padding-top: 1rem !important;
 }
 
-.pages__container-item{
-	flex: 0 0 auto;
-    width: 25%;
-	text-align: center !important;
+.section-img{
+	flex-shrink: 0 !important;
+	margin-right: .5rem !important;
+	--bs-border-radius-pill: 50rem;
+	border-radius: var(--bs-border-radius) !important;
 }
 
-.pages__link{
-	
+.section-p{
+	padding-bottom: 1rem !important;
+	margin-bottom: 0 !important;
+	font-size: .875em;
+	line-height: 1.25 !important;
 }
 
-.pages__link-h3{
-	
+.section-strong{
+	display: block !important;
 }
 
-.order{
-	--bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(-1 * var(--bs-gutter-y));
-    margin-right: calc(-.5 * var(--bs-gutter-x));
-    margin-left: calc(-.5 * var(--bs-gutter-x));
-}
-
-.order__container{
-	flex: 0 0 auto;
-    width: 50%;
-	text-align: center !important;
-	margin-top:2%;
-}
-
-.order__container-h3{
-	text-align: center;
-    border-bottom: 1px solid #953F73;
-}
-
-.phases{
-	flex: 0 0 auto;
-    width: 50%;
-}
-
-.phases__container{
-	--bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(-1 * var(--bs-gutter-y));
-    margin-right: calc(-.5 * var(--bs-gutter-x));
-    margin-left: calc(-.5 * var(--bs-gutter-x));
-}
-
-.phases__container-item{
-	--bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(-1 * var(--bs-gutter-y));
-    margin-right: calc(-.5 * var(--bs-gutter-x));
-    margin-left: calc(-.5 * var(--bs-gutter-x));
-	flex-shrink: 0;
-    width: 100%;
-    max-width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * .5);
-    padding-left: calc(var(--bs-gutter-x) * .5);
-    margin-top: var(--bs-gutter-y);
-}
-
-.phases__col{
-	flex: 1 0 0%;
-	flex-shrink: 0;
-    width: 100%;
-    max-width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * .5);
-    padding-left: calc(var(--bs-gutter-x) * .5);
-    margin-top: var(--bs-gutter-y)
-}
-
-.phases__name{
-	font-weight: bolder;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	margin-left: 5%;
-	margin-right:25%;
+.back-button{
 	border: 1px solid #953F73;
-	text-align: center !important;
-}
-
-.phases__vline{
-	display: inline-block;
-    align-self: stretch;
-    width: 1px;
-    min-height: 1em;
-    background-color: currentcolor;
-    opacity: .25;
-	padding-bottom: 15%;
-	width: 1px;
-	margin-left: 50%;
-	background-color: #953F73;
-	opacity: 1;
+	border-radius: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+	text-transform: none;
+	background-color: transparent;
+	color: #953F73;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	padding: 2px;
+	width: 10%;
 }
 
 /*----------RESPONSIVE----------*/
