@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Pixel Art</title>
+	<title>Character design</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="./../css/bootstrap.min.css" rel="stylesheet">
@@ -29,7 +29,7 @@
 		<div class="banner d-flex justify-content-center flex-column text-center" title="Banner">
 			<div class="banner__frame">
 				<div class="banner__content container-fluid p-3 text-center">
-					<h1>For Your Info</h1>
+					<h1>Contact</h1>
 					<p>Digital Art Portfolio</p>
 				</div>
 			</div>
@@ -38,38 +38,28 @@
 
 	<!--MAIN-->
 
-	<!--RETURN TO INDEX-->
-	<div class="back-button__container">
-		<input class="back-button" type="button" onclick="location.href='./../index.html';" value="Back" />
-	</div>
-
 	<main>
 
-		<!--SECTION-->
-		<div class="separator pt-5"></div>
-		<div class="info__section row">
-			<div class="info__section__text col-sm-8">
-				<h3 id="rules">Rules</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-					labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-					laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur
-					adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-					minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			</div>
+		<!--RETURN TO INDEX-->
+		<div class="back-button__container">
+			<input class="back-button" type="button" onclick="location.href='./../index.html';" value="Back" />
 		</div>
 
-		<!--SECTION REVERSE-->
+		<!--FORM-->
 		<div class="separator pt-5"></div>
-		<div class="info__section-reverse row flex-row-reverse">
-			<div class="info__section__text-reverse col-sm-8">
-				<h3 id="payment-info">Payment Info</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-					labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-					laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur
-					adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-					minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<form class="contact__form">
+			<div class="contact__form-email form-group">
+				<label>What Email should we reply to?</label>
+				<input type="email" class="contact__form-input form-control" placeholder="Enter email">
+				<p>Remember to check your spam section just in case.</p>
 			</div>
-		</div>
+			<div class="contact__form-textarea form-group">
+				<textarea rows="5" cols="33">Writes your comments here...</textarea>
+			</div>
+			<div class="contact__sumbit">
+				<button type="submit" class="contact__submit-button btn btn-primary">Submit</button>
+			</div>
+		</form>
 
 	</main>
 
@@ -90,14 +80,8 @@
 			</section>
 		</div>
 
-		<div class="foot__contact">
-			<a class="foot__contact-button btn btn-outline-light btn-floating m-1" href="./contact.html"
-				role="button">Contact</a>
-		</div>
-
 		<div class="copyright__container text-center p-3">© 2023 Copyright: Bunila</div>
 	</footer>
-
 </body>
 
 </html>

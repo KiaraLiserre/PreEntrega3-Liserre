@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Bunila</title>
-  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Free Web tutorials">
   <meta name="keywords" content="Pixel-Art, Character-Design, Emotes">
   <meta name="Chiara Liserre" content="Business page">
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/mystyle.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
   <link rel="icon" type="image/x-icon" href="resources/img/ositos.png">
-  <link href="css/index.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+  <!--HEADER-->
+
   <header>
     <nav class="navbar">
       <div class="navbar__container">
-        <a class="navbar__container-item" href="pages/artstyles.html">Art Styles</a>
-        <a class="navbar__container-item" href="pages/socials.html">Socials</a>
-        <!--More redirects only to FAQ page for now. Dropdown for options Rules and Payment Info remains to be developed-->
-        <a class="navbar__container-item" href="pages/faq.html">More</a>
+        <a class="navbar__container-item" href="./pages/artstyles.html">Art Styles</a>
+        <a class="navbar__container-item" href="./pages/fyi.html">About</a>
+        <a class="navbar__container-item" href="./pages/contact.html">Contact</a>
+        <a class="navbar__container-item" href="./pages/faq.html">F.A.Q.</a>
       </div>
     </nav>
 
-    <div class="banner" title="Banner">
+    <div class="banner d-flex justify-content-center flex-column text-center" title="Banner">
       <div class="banner__frame">
-        <div class="banner__title">
+        <div class="banner__content container-fluid p-3 text-center">
           <h1>Bunila</h1>
           <p>Digital Art Portfolio</p>
         </div>
@@ -36,107 +40,153 @@
     </div>
   </header>
 
+  <!--MAIN-->
+
   <main>
-    <div class="pages">
-      <div class="pages__container">
-        <h2 class="pages__title">Artwork Styles and Rules</h2>
-        <div class="pages__title-subtitle">
-          <p>Please note that each order can take more or less time<br>depening on what you ordered.</p>
+    <div class="topics container mb-4 pb-4">
+      <div class="topics__container row justify-content-center">
+        <h2 class="topics__title">Hot topics</h2>
+        <div class="topics__subtitle d-flex justify-content-center flex-column text-center">
+          <p>These are the most relevant sections of the moment.</p>
         </div>
-		
-        <a class="pages__container-item" href="pages/fyi.html#rules">
-          <div class="pages__link">
-            <img class="rounded-icon pages__link-img" src="resources/img/ositos.png" alt="Missing osito.png">
-            <h3 class="pages__link-h3">Rules</h3>
-            <p>Here you'll be able to know all of terms of service for being eligible to order.</p>
-          </div>
-        </a>
 
-        <a class="pages__container-item" href="pages/fyi.html#payment-info">
-          <div class="pages__link">
-            <img class="rounded-icon pages__link-img" src="resources/img/ositos.png" alt="Missing osito.png">
-            <h3 class="pages__link-h3">Payment Info</h3>
-            <p>Here you’ll be able to know all about my payment information and purchising process. </p>
-          </div>
-        </a>
+        <!--STATIC CAROUSEL-->
+        <div class="carousel row justify-content-center">
 
-        <a class="pages__container-item" href="#">
-		<!--This link is not yet developed-->
-          <div class="pages__link">
-            <img class="rounded-icon pages__link-img" src="resources/img/ositos.png" alt="Missing osito.png">
-            <h3 class="pages__link-h3">Order List</h3>
-            <p>Here you’ll be able to see your position in my ordering list. You may ask to be anonymous.</p>
-          </div>
-        </a>
+          <a class="carousel__link col-sm-3 text-center" href="./pages/fyi.html#rules">
+            <div class="carousel__link-container link-container">
+              <div class="carousel__link-description desc-container">
+                <img class="carousel__link-img" src="./resources/img/ositos.png" alt="Missing osito.png">
+                <h3 class="carousel__link-title">Rules</h3>
+                <p class="carousel__link-text">Here you'll be able to know all of my rules, do's and don'ts as well as
+                  my payment information.</p>
+              </div>
+            </div>
+          </a>
 
-        <a class="pages__container-item" href="#">
-		<!--This link is not yet developed-->
-          <div class="pages__link">
-            <img class="rounded-icon pages__link-img" src="resources/img/ositos.png" alt="Missing osito.png">
-            <h3 class="pages__link-h3">Inquiries</h3>
-            <p>For any suggestions or questions you may have please don’t hesitate to contact me!</p>
-          </div>
-        </a>
+          <a class="carousel__link col-sm-3 text-center" href="./pages/artstyles.html#pixel-art">
+            <div class="carousel__link-container link-container">
+              <div class="carousel__link-description desc-container">
+                <img class="carousel__link-img" src="./resources/img/ositos.png" alt="Missing osito.png">
+                <h3 class="carousel__link-title">Pixel Art</h3>
+                <p class="carousel__link-text">Pixel art style usually takes more time. You may ask for animations if
+                  wanted but please ask first as
+                  I only do a selected type of animations</p>
+              </div>
+            </div>
+          </a>
+
+          <a class="carousel__link col-sm-3 text-center" href="./pages/artstyles.html#char-design">
+            <div class="carousel__link-container link-container">
+              <div class="carousel__link-description desc-container">
+                <img class="carousel__link-img" src="./resources/img/ositos.png" alt="Missing osito.png">
+                <h3 class="carousel__link-title">Character Design</h3>
+                <p class="carousel__link-text">Character design refers to game characters, vtuber concept art, etc. No
+                  animations.</p>
+              </div>
+            </div>
+          </a>
+
+          <a class="carousel__link col-sm-3 text-center" href="./pages/artstyles.html#emotes">
+            <div class="carousel__link-container link-container">
+              <div class="carousel__link-description desc-container">
+                <img class="carousel__link-img" src="./resources/img/ositos.png" alt="Missing osito.png">
+                <h3 class="carousel__link-title">Emotes</h3>
+                <p class="carousel__link-text">Emotes refer to Discord and Twitch emotes. No animations at the moment.
+                </p>
+              </div>
+            </div>
+          </a>
+
+        </div> <!--END CAROUSEL-->
       </div>
     </div>
+    <div class="separator pt-5"></div>
 
-    <div class="separator"></div>
+    <!--ORDER SECTION A-->
 
-    <div class="order">
-      <div class="order__container">
+    <div class="order row g-5">
+      <div class="order__container col-md-6 text-center">
         <h3 class="order__container-h3">Order delivering process</h3>
         <p>Depending on the style and what you ask, it may take between a week or two.<br>I'll update you all the
           time and let you know if there's any inconvenience.</p>
-        <button type="button">> Order here! <</button>
+        <button type="order__button">˃ Order here! ˂
       </div>
 
-      <div class="phases">
-        <div class="phases__container">
-          <div class="phases__container-item">
-            <div class="phases__col">
-              <h4 class="phases__phase">START-UP</h4>
-              <div class="phases__vline"></div>
+      <!--ORDER SECTION B-->
+
+      <div class="phases col-md-6">
+        <div class="phases__container row">
+          <div class="phases__container-item row">
+            <div class="phases__col-left col">
+              <h4 class="phases__stage stage text-center">START-UP</h4>
+              <div class="phases__line first__line vr"></div>
             </div>
-            <div class="phases__col">
-              <h4 class="phases__name">REFERENCES AND PRINCING</h4>
+            <div class="phases__col-right col">
+              <h4>REFERENCES AND PRINCING</h4>
               <p>Starting from here i'll ask you to send all possible references so we can see what i'm able to do and
                 the cost of it.</p>
             </div>
           </div>
-          <div class="phases__container-item">
-            <div class="phases__col">
-              <h4 class="phases__phase">PHASE 2</h4>
-              <div class="phases__vline line__mid"></div>
+          <div class="phases__container-item row">
+            <div class="phases__col-left col">
+              <h4 class="phases__stage stage text-center">PHASE 2</h4>
+              <div class="phases__line mid__line vr vr-mid"></div>
             </div>
-            <div class="phases__col">
-              <h4 class="phases__name">SKETCHING</h4>
+            <div class="phases__col-right col">
+              <h4>SKETCHING</h4>
               <p>In this phase you'll be allowed to ask for as many changes as you wish. Once you finally confirm the
                 sketch there will be no more changes aside from colors.</p>
             </div>
           </div>
-          <div class="phases__container-item">
-            <div class="phases__col">
-              <h4 class="phases__phase">PHASE 3</h4>
-              <div class="phases__vline line__last"></div>
+          <div class="phases__container-item row">
+            <div class="phases__col-left col">
+              <h4 class="phases__stage stage text-center">PHASE 3</h4>
+              <div class="phases__line last__line vr vr-last"></div>
             </div>
-            <div class="phases__col">
-              <h4 class="phases__name">LINEART AND COLORING</h4>
+            <div class="phases__col-right col">
+              <h4>LINEART AND COLORING</h4>
               <p>In this phase i'll be sending you various wips and chaning the colors or tones as you wish. Here is
                 where you'll also check on the animations you wanted.</p>
             </div>
           </div>
-          <div class="phases__container-item">
-            <div class="phases__col">
-              <h4 class="phases__phase">FINISHED</h4>
+          <div class="phases__container-item row">
+            <div class="phases__col-left col">
+              <h4 class="phases__stage stage text-center">FINISHED</h4>
             </div>
-            <div class="phases__col">
-              <h4 class="phases__name">FINAL ADJUSTMENTS AND FILES</h4>
+            <div class="phases__col-right col">
+              <h4>FINAL ADJUSTMENTS AND FILES</h4>
             </div>
           </div>
         </div>
       </div>
     </div>
   </main>
+
+  <!--FOOTER-->
+
+  <footer class="foot text-center text-white">
+    <div class="foot__container container p-4 pb-0">
+      <section class="foot__section mb-4">
+        <!-- Discord -->
+        <a class="foot__section-item btn btn-outline-light btn-floating m-1" href="#!" role="button">Discord</a>
+        <!-- Instagram -->
+        <a class="foot__section-item btn btn-outline-light btn-floating m-1" href="#!" role="button">Instagram</a>
+        <!-- Twitch -->
+        <a class="foot__section-item btn btn-outline-light btn-floating m-1" href="#!" role="button">Twitch</a>
+        <!-- Algo mas -->
+        <a class="foot__section-item btn btn-outline-light btn-floating m-1" href="#!" role="button">XD</a>
+      </section>
+    </div>
+
+    <div class="foot__contact">
+      <a class="foot__contact-button btn btn-outline-light btn-floating m-1" href="./pages/contact.html"
+        role="button">Contact</a>
+    </div>
+
+    <div class="copyright__container text-center p-3">© 2023 Copyright: Bunila</div>
+  </footer>
+
 </body>
 
 </html>
